@@ -11,6 +11,7 @@ This independent Python project rebuilds a reusable domain-specific small langua
 - `data/`: small, licensed or clearly labelled sample inputs.
 - `outputs/` and `artifacts/`: generated local files, excluded from Git.
 - `make check`: syntax check and automated tests. Python 3.11+ is required.
+- `make demo`: prepare the synthetic sample once; the output directory must not already exist.
 
 ## Engineering rules
 

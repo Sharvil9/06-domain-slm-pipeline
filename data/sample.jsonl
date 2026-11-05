@@ -1,0 +1,15 @@
+{"text": "Why was a card payment fee charged?", "label": "card_payment_fee_charged"}
+{"text": "Explain the fee on my card purchase.", "label": "card_payment_fee_charged"}
+{"text": "I see a surcharge on my card transaction.", "label": "card_payment_fee_charged"}
+{"text": "What is this card purchase fee?", "label": "card_payment_fee_charged"}
+{"text": "My card payment included an extra charge.", "label": "card_payment_fee_charged"}
+{"text": "My card payment was rejected.", "label": "declined_card_payment"}
+{"text": "The terminal declined my card.", "label": "declined_card_payment"}
+{"text": "Why was my card purchase refused?", "label": "declined_card_payment"}
+{"text": "My card was not accepted at checkout.", "label": "declined_card_payment"}
+{"text": "The card transaction was denied.", "label": "declined_card_payment"}
+{"text": "My completed card payment was reversed.", "label": "reverted_card_payment"}
+{"text": "The purchase was undone and money returned.", "label": "reverted_card_payment"}
+{"text": "Why was my card payment sent back?", "label": "reverted_card_payment"}
+{"text": "A settled card transaction was refunded to my account.", "label": "reverted_card_payment"}
+{"text": "My earlier payment was reversed after completion.", "label": "reverted_card_payment"}

@@ -1,0 +1,11 @@
+[dataset]
+path = "../data/sample.jsonl"
+labels = ["card_payment_fee_charged", "declined_card_payment", "reverted_card_payment"]
+
+[task]
+instruction = "Classify the card payment request. Return a JSON object with the intent."
+
+[split]
+seed = 42
+validation = 0.2
+test = 0.2
