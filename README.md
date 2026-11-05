@@ -41,3 +41,5 @@ The command validates records and labels, removes normalized duplicates, rejects
 - `.github/workflows/` — basic continuous integration.
 
 Future training will use real pretrained weights and adapters. Large datasets, generated artifacts, model weights, credentials, and virtual environments stay outside Git. See `AGENTS.md` for engineering constraints.
+
+See [SPEC.md](SPEC.md) for the intended architecture and [PLAN.md](PLAN.md) for the verified rebuild milestones and current hardware blocker.
