@@ -14,6 +14,16 @@ make check
 
 `make check` compiles the Python source and runs the test suite.
 
+## Check model-runtime prerequisites
+
+Before installing MLX or downloading model weights, run:
+
+```sh
+make doctor
+```
+
+The JSON report includes the current OS, architecture, CPU and memory limits, installed `mlx` and `mlx-lm` versions, and whether Apple Metal is available. `smoke_test_ready` is only an environment preflight; it does not load Gemma, prove training compatibility, or run inference. The command performs no network access and loads no model weights. On Linux or Intel macOS it reports the blocker while exiting successfully.
+
 ## Prepare the sample dataset
 
 ```sh

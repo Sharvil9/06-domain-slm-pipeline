@@ -129,4 +129,8 @@ def main():
 
 
 if __name__ == "__main__":
+    if sys.argv[1:2] == ["doctor"]:
+        from .doctor import main as doctor_main
+
+        sys.exit(doctor_main(sys.argv[2:]))
     sys.exit(main())
