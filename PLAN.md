@@ -4,6 +4,7 @@
 - [x] Implement and test a configuration-driven synthetic JSONL preparation slice with deterministic split receipts; push the milestone.
 - [x] Record the intended architecture, recovered model selection, and the current environment limitation.
 - [x] Persist a project-specific execution brief and add a non-invasive MLX/Metal environment preflight; validate on the current Linux executor.
+- [x] Add a synthetic Text-to-SQL preparation slice with database-level splits and bounded read-only reference-query checks.
 - [ ] Establish a reproducible Apple Silicon environment and prove the selected Gemma 4 E4B backend with real loading, two LoRA optimizer steps, adapter changes, save/reload, and inference. Record resource usage and artifact hashes.
 - [ ] Prepare a licensed Text-to-SQL dataset with database-level separation, validated references, and bounded read-only SQLite execution. Freeze evaluation and gate criteria before candidate results.
 - [ ] Run one complete adapter experiment, compare it with the original base under matched validation conditions, and preserve honest results.

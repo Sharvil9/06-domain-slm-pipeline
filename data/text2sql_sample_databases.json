@@ -1,0 +1,55 @@
+{
+  "orders_demo": {
+    "tables": {
+      "orders": {
+        "columns": [
+          {"name": "id", "type": "INTEGER"},
+          {"name": "customer", "type": "TEXT"},
+          {"name": "status", "type": "TEXT"},
+          {"name": "amount_cents", "type": "INTEGER"}
+        ],
+        "rows": [
+          [1, "Ari", "paid", 1250],
+          [2, "Bo", "pending", 1800],
+          [3, "Ari", "paid", 950]
+        ]
+      }
+    }
+  },
+  "appointments_demo": {
+    "tables": {
+      "appointments": {
+        "columns": [
+          {"name": "id", "type": "INTEGER"},
+          {"name": "patient_id", "type": "TEXT"},
+          {"name": "status", "type": "TEXT"},
+          {"name": "fee_cents", "type": "INTEGER"}
+        ],
+        "rows": [
+          [1, "p1", "scheduled", 1900],
+          [2, "p2", "completed", 2200],
+          [3, "p1", "scheduled", 1600],
+          [4, "p3", "cancelled", 0]
+        ]
+      }
+    }
+  },
+  "deliveries_demo": {
+    "tables": {
+      "shipments": {
+        "columns": [
+          {"name": "id", "type": "INTEGER"},
+          {"name": "region", "type": "TEXT"},
+          {"name": "status", "type": "TEXT"},
+          {"name": "weight_kg", "type": "REAL"}
+        ],
+        "rows": [
+          [1, "north", "delivered", 2.5],
+          [2, "south", "in_transit", 4.0],
+          [3, "north", "delivered", 3.0],
+          [4, "south", "delivered", 1.0]
+        ]
+      }
+    }
+  }
+}

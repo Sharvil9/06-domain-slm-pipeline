@@ -1,0 +1,10 @@
+[dataset]
+examples = "../data/text2sql_sample.jsonl"
+databases = "../data/text2sql_sample_databases.json"
+source = "Synthetic Text-to-SQL examples authored for this repository"
+license = "Apache-2.0 (see repository LICENSE)"
+
+[split]
+seed = 42
+validation = 0.2
+test = 0.2

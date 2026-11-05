@@ -133,4 +133,8 @@ if __name__ == "__main__":
         from .doctor import main as doctor_main
 
         sys.exit(doctor_main(sys.argv[2:]))
+    if sys.argv[1:2] == ["prepare-sql"]:
+        from .sql_prepare import main as prepare_sql_main
+
+        sys.exit(prepare_sql_main(sys.argv[2:]))
     sys.exit(main())

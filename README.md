@@ -41,6 +41,17 @@ PYTHONPATH=src python3 -m domain_slm --config configs/sample.toml --output outpu
 
 The command validates records and labels, removes normalized duplicates, rejects conflicting labels, and assigns each unique input to one deterministic, label-stratified split. The manifest records hashes, counts, and the seed. Prepared messages describe the desired task; model-specific chat templates and target-token masking must be applied and verified during the later training stage. Outputs are not model weights or evaluation results.
 
+## Prepare Text-to-SQL examples
+
+The Text-to-SQL slice uses a tiny project-authored synthetic fixture, with no external benchmark data:
+
+```sh
+make sql-demo
+python3 -m json.tool outputs/text2sql-sample/manifest.json
+```
+
+It validates every reference query against its declared expected rows using a fresh in-memory SQLite database. SQLite authorizer rules allow reads from declared tables and deny writes, schema changes, attachment, and other actions; query execution has instruction, time, row, and output-size bounds. All examples from one database stay in one split. Outputs contain only the prompt, SQL target, and a hash of the expected result; they do not include expected rows. The manifest records provenance, source/configuration hashes, split database IDs, and reference-validation counts. This fixture is synthetic and is not a final evaluation set. The output directory must not already exist.
+
 ## Layout
 
 - `src/domain_slm/` — pipeline implementation.

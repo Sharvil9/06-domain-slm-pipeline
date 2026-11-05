@@ -1,0 +1,9 @@
+{"db_id":"orders_demo","question":"How many orders are paid?","sql":"SELECT COUNT(*) FROM orders WHERE status = 'paid'","expected":[[2]]}
+{"db_id":"orders_demo","question":"List the customers who have paid orders in order id order.","sql":"SELECT customer FROM orders WHERE status = 'paid' ORDER BY id","expected":[["Ari"],["Ari"]]}
+{"db_id":"orders_demo","question":"What is the total amount of paid orders in cents?","sql":"SELECT SUM(amount_cents) FROM orders WHERE status = 'paid'","expected":[[2200]]}
+{"db_id":"appointments_demo","question":"How many appointments are scheduled?","sql":"SELECT COUNT(*) FROM appointments WHERE status = 'scheduled'","expected":[[2]]}
+{"db_id":"appointments_demo","question":"How many different patients have appointments?","sql":"SELECT COUNT(DISTINCT patient_id) FROM appointments","expected":[[3]]}
+{"db_id":"appointments_demo","question":"What is the total appointment fee in cents?","sql":"SELECT SUM(fee_cents) FROM appointments","expected":[[5700]]}
+{"db_id":"deliveries_demo","question":"How many shipments have been delivered?","sql":"SELECT COUNT(*) FROM shipments WHERE status = 'delivered'","expected":[[3]]}
+{"db_id":"deliveries_demo","question":"What is the total weight of north region shipments?","sql":"SELECT SUM(weight_kg) FROM shipments WHERE region = 'north'","expected":[[5.5]]}
+{"db_id":"deliveries_demo","question":"List delivered shipment ids from largest weight to smallest.","sql":"SELECT id FROM shipments WHERE status = 'delivered' ORDER BY weight_kg DESC, id","expected":[[3],[1],[4]]}
